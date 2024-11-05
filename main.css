@@ -544,6 +544,8 @@ li{
   background-color: #f3ead3;
   margin: 85px auto;
   max-width: 90%;
+  display: flex;
+  justify-content: space-evenly;
 }
 .product-file{
   width: 300px;
@@ -615,7 +617,33 @@ li{
   margin-left: 10rem;
   margin-top: -40px;
 }
-
+.product-shoe{
+  background-color: #2f595a;
+  width: 300px;
+  height: 500px;
+}
+.product-slide{
+  background-color: #6badaf;
+  width: 300px;
+  height: 300px;
+  clip-path: ellipse(57% 60% at 57% 0%);
+}
+.shoe-img{
+  display: flex;
+  flex-wrap: wrap;
+}
+.shoe-img img{
+  width: 18rem;
+  margin: -9rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.shoe-text{
+  margin-top: -7rem;
+  color: white;
+  margin-left: 10rem;
+  font-size: 25px;
+}
 @media(max-width: 768px){
   .container{
     display: grid;
