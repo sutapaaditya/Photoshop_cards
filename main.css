@@ -622,27 +622,92 @@ li{
   width: 300px;
   height: 500px;
 }
+
 .product-slide{
   background-color: #6badaf;
+  clip-path: ellipse(70% 70% at 36% 0);
+  height: 380px;
   width: 300px;
-  height: 300px;
-  clip-path: ellipse(57% 60% at 57% 0%);
 }
-.shoe-img{
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .shoe-img img{
   width: 18rem;
-  margin: -9rem 1rem;
-  position: relative;
-  overflow: hidden;
+  margin-top: -3rem;
+  margin-left: 0.5rem;
 }
+
 .shoe-text{
-  margin-top: -7rem;
-  color: white;
-  margin-left: 10rem;
-  font-size: 25px;
+  margin-top: 1rem;
+  color: #32534f;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Merriweather", sans-serif;
+  font-size: 28px;
+  text-align: center;
+}
+
+.shoe-midtext{
+  color: #a2eef1;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Merriweather", sans-serif;
+  font-size: 28px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: -5rem;
+  cursor: pointer;
+}
+
+.shoe-midtext, .size-box{
+  background-color: #1f3c3d;
+  padding: 4px; 
+}
+
+.multi-color{
+  color: #a2eef1;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Merriweather", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.color-radius{
+  background-color: #000;
+  width: 30px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.color-Radius{
+  background-color: #181ba5;
+  width: 30px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.Color-radius{
+  background-color: #7767f3;
+  width: 30px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.shoe-btn{
+  margin: 2rem auto;
+  text-align: center;
+  width: 8rem;
+  height: 50px;
+  padding: 10px;
+  background-color: #1a8183;
+  color: #a2eef1;
+ font-size: 24px; 
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
 }
 @media(max-width: 768px){
   .container{
@@ -764,5 +829,12 @@ li{
   }
   li:nth-child(odd){
     background-color: lightcoral;
+  }
+  .product{
+    display: grid;
+    flex-direction: column;
+  }
+  .product-shoe{
+    margin-top: 4rem;
   }
 }
